@@ -34,6 +34,8 @@ class Torch2TFLiteConverter:
         self.target_shape = target_shape
         # self.seed = seed
         # self.normalize = normalize
+        # self.seed = seed
+        # self.normalize = normalize
         self.seed = seed
         self.normalize = normalize
 
