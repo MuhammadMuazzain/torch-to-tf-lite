@@ -14,6 +14,9 @@ from onnx_tf.backend import prepare
 import torch
 import tensorflow as tf
 
+import torch
+import tensorflow as tf
+
 
 class Torch2TFLiteConverter:
     def __init__(
@@ -31,6 +34,7 @@ class Torch2TFLiteConverter:
         self.target_shape = target_shape
         self.seed = seed
         self.normalize = normalize
+
 
         self.tmpdir = '/tmp/torch2tflite/'
         self.__check_tmpdir()
