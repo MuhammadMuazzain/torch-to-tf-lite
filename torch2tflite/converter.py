@@ -11,8 +11,8 @@ import cv2
 import numpy as np
 import onnx
 from onnx_tf.backend import prepare
-import torch
-import tensorflow as tf
+# import torch
+# import tensorflow as tf
 
 import torch
 import tensorflow as tf
@@ -32,6 +32,8 @@ class Torch2TFLiteConverter:
         self.tflite_model_path = tflite_model_save_path
         self.sample_file_path = sample_file_path
         self.target_shape = target_shape
+        # self.seed = seed
+        # self.normalize = normalize
         self.seed = seed
         self.normalize = normalize
 
