@@ -44,6 +44,8 @@ class Torch2TFLiteConverter:
         # self.normalize = normalize
         # self.seed = seed
         # self.normalize = normalize
+        # self.seed = seed
+        # self.normalize = normalize
         self.seed = seed
         self.normalize = normalize
 
