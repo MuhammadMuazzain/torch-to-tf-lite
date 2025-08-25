@@ -97,6 +97,13 @@ class Torch2TFLiteConverter:
                           'that model saved like `torch.save(model, PATH)`')
             sys.exit(-1)
 
+    # def load_tflite(self):
+
+    #     interpret = tf.lite.Interpreter(self.tflite_model_path)
+    #     interpret.allocate_tensors()
+    #     logging.info(f'TFLite interpreter successfully loaded from, {self.tflite_model_path}')
+    #     return interpret
+
     def load_tflite(self):
 
         interpret = tf.lite.Interpreter(self.tflite_model_path)
