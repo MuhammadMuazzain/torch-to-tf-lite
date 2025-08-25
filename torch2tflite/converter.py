@@ -51,6 +51,8 @@ class Torch2TFLiteConverter:
         # self.tf2tflite()
         # torch_output = self.inference_torch()
 
+        # self.torch2onnx()
+        # self.onnx2tf()
         self.torch2onnx()
         self.onnx2tf()
         self.tf2tflite()
