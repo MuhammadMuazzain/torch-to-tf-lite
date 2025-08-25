@@ -46,6 +46,11 @@ class Torch2TFLiteConverter:
         self.sample_data = self.load_sample_input(sample_file_path, target_shape, seed, normalize)
 
     def convert(self):
+        # self.torch2onnx()
+        # self.onnx2tf()
+        # self.tf2tflite()
+        # torch_output = self.inference_torch()
+
         self.torch2onnx()
         self.onnx2tf()
         self.tf2tflite()
