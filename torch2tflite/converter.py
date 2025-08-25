@@ -53,6 +53,8 @@ class Torch2TFLiteConverter:
 
         # self.torch2onnx()
         # self.onnx2tf()
+        # self.torch2onnx()
+        # self.onnx2tf()
         self.torch2onnx()
         self.onnx2tf()
         self.tf2tflite()
