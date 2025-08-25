@@ -63,6 +63,15 @@ class Torch2TFLiteConverter:
         self.calc_error(torch_output, tflite_output)
 
     def __check_tmpdir(self):
+        # try:
+        #     if os.path.exists(self.tmpdir) and os.path.isdir(self.tmpdir):
+        #         shutil.rmtree(self.tmpdir)
+        #         logging.info(f'Old temp directory removed')
+        #     os.makedirs(self.tmpdir, exist_ok=True)
+        #     logging.info(f'Temp directory created at {self.tmpdir}')
+        # except Exception:
+        #     logging.error('Can not create temporary directory, exiting!')
+        #     sys.exit(-1)
         try:
             if os.path.exists(self.tmpdir) and os.path.isdir(self.tmpdir):
                 shutil.rmtree(self.tmpdir)
