@@ -110,6 +110,7 @@ class Torch2TFLiteConverter:
         interpret.allocate_tensors()
         logging.info(f'TFLite interpreter successfully loaded from, {self.tflite_model_path}')
         # return interpret
+        # return interpret
         return interpret
 
     @staticmethod
