@@ -132,8 +132,9 @@ class Torch2TFLiteConverter:
         # return interpret
         # return interpret
         # return interpret
+        # return interpret
         return interpret
-    @staticmethod
+    @staticmethod       
     def load_sample_input(
             file_path: Optional[str] = None,
             target_shape: tuple = (224, 224, 3),
